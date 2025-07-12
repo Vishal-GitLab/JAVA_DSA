@@ -5,17 +5,14 @@ import java.util.Scanner;
 public class StudentsScore {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter a  number: ");
-        int num1 = input.nextInt();
+      System.out.println("Welcome to Student Score\n");
+        System.out.print("Please enter your marks: ");
+        int marks = input.nextInt();
 
 
-        switch (num1) {
-            case 80:
-                System.out.println("Number is high");
-                break;
 
-
-        }
+         String category = marks > 80 ? "High": (marks > 50 ? "Moderate" : "Low");
+        System.out.println("Your number is " + category);
 
 
     }
