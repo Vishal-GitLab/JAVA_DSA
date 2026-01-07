@@ -19,3 +19,4 @@ public class BinaryToDecimal {
         System.out.println(ans);
     }
 }
+
